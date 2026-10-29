@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23758178.svg)](https://doi.org/10.5281/zenodo.23758178)
 # Open-Source FPGA FIR Architecture Comparison for Wearable PPG
 
 Verilog implementations of **direct**, **symmetric-folded** and **run-time-selectable** linear-phase FIR filters (5, 15 and 31 taps) for photoplethysmography (PPG) on an Artix-7 FPGA, with post-route Vivado reports, a bit-exact golden-model check, and a timing comparison against a causal Butterworth IIR.
@@ -72,7 +73,9 @@ Note that the 31-tap FIR has a 15-sample group delay (about 0.27 s at 55 Hz). Th
 - Low-order, low-pass dominant filters with no baseline-wander rejection.
 - RTL simulation covers the 31-tap folded design only.
 - Fmax and power values are Vivado estimates (relaxed constraint, vectorless power with Low confidence). No on-board measurement was performed and no IIR was implemented in hardware, so no area or power comparison with IIR is claimed.
+## Citation
 
+If you use this work, please cite the archived release: **[10.5281/zenodo.23758178](https://doi.org/10.5281/zenodo.23758178)**. See `CITATION.cff`.cff
 ## Repository structure
 
 ```text
