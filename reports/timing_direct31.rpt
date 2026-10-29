@@ -1,0 +1,443 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Oct 28 14:27:38 2026
+| Host         : DESKTOP-RK0A19B running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file I:/pot/ppg/final_reports/timing_direct31_true.rpt
+| Design       : variable_tap_fir_buildtime
+| Device       : 7a200t-fbg676
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                    Violations  
+---------  --------  -----------------------------  ----------  
+DPIR-1     Warning   Asynchronous driver check      810         
+TIMING-18  Warning   Missing input or output delay  33          
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (17)
+6. checking no_output_delay (16)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (17)
+-------------------------------
+ There are 17 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (16)
+--------------------------------
+ There are 16 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      2.798        0.000                      0                  480        0.155        0.000                      0                  480       24.500        0.000                       0                   497  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 25.000}     50.000          20.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 2.798        0.000                      0                  480        0.155        0.000                      0                  480       24.500        0.000                       0                   497  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        2.798ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.155ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       24.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             2.798ns  (required time - arrival time)
+  Source:                 shift_reg_reg[29][15]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            data_out_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            50.000ns  (clk rise@50.000ns - clk rise@0.000ns)
+  Data Path Delay:        46.990ns  (logic 42.947ns (91.396%)  route 4.043ns (8.604%))
+  Logic Levels:           38  (CARRY4=9 DSP48E1=27 LUT2=1 LUT3=1)
+  Clock Path Skew:        -0.250ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.952ns = ( 53.952 - 50.000 ) 
+    Source Clock Delay      (SCD):    4.436ns
+    Clock Pessimism Removal (CPR):    0.234ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+    L22                                               0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    L22                  IBUF (Prop_ibuf_I_O)         0.893     0.893 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.827     2.720    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.081     2.801 r  clk_IBUF_BUFG_inst/O
+                         net (fo=496, routed)         1.635     4.436    clk_IBUF_BUFG
+    SLICE_X10Y69         FDCE                                         r  shift_reg_reg[29][15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y69         FDCE (Prop_fdce_C_Q)         0.433     4.869 r  shift_reg_reg[29][15]/Q
+                         net (fo=15, routed)          0.856     5.725    shift_reg_reg[29][15]
+    DSP48_X0Y26          DSP48E1 (Prop_dsp48e1_A[21]_PCOUT[47])
+                                                      3.397     9.122 r  scaled2/PCOUT[47]
+                         net (fo=1, routed)           0.002     9.124    scaled2_n_106
+    DSP48_X0Y27          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    10.562 r  scaled0/PCOUT[47]
+                         net (fo=1, routed)           0.002    10.564    scaled0_n_106
+    DSP48_X0Y28          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    12.002 r  scaled0__0/PCOUT[47]
+                         net (fo=1, routed)           0.002    12.004    scaled0__0_n_106
+    DSP48_X0Y29          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    13.442 r  scaled0__1/PCOUT[47]
+                         net (fo=1, routed)           0.056    13.497    scaled0__1_n_106
+    DSP48_X0Y30          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    14.935 r  scaled0__2/PCOUT[47]
+                         net (fo=1, routed)           0.002    14.937    scaled0__2_n_106
+    DSP48_X0Y31          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    16.375 r  scaled0__3/PCOUT[47]
+                         net (fo=1, routed)           0.002    16.377    scaled0__3_n_106
+    DSP48_X0Y32          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    17.815 r  scaled0__4/PCOUT[47]
+                         net (fo=1, routed)           0.002    17.817    scaled0__4_n_106
+    DSP48_X0Y33          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    19.255 r  scaled0__5/PCOUT[47]
+                         net (fo=1, routed)           0.002    19.257    scaled0__5_n_106
+    DSP48_X0Y34          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    20.695 r  scaled0__6/PCOUT[47]
+                         net (fo=1, routed)           0.002    20.697    scaled0__6_n_106
+    DSP48_X0Y35          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    22.135 r  scaled0__7/PCOUT[47]
+                         net (fo=1, routed)           0.002    22.137    scaled0__7_n_106
+    DSP48_X0Y36          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    23.575 r  scaled0__8/PCOUT[47]
+                         net (fo=1, routed)           0.002    23.577    scaled0__8_n_106
+    DSP48_X0Y37          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    25.015 r  scaled0__9/PCOUT[47]
+                         net (fo=1, routed)           0.002    25.017    scaled0__9_n_106
+    DSP48_X0Y38          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    26.455 r  scaled0__10/PCOUT[47]
+                         net (fo=1, routed)           0.002    26.457    scaled0__10_n_106
+    DSP48_X0Y39          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    27.895 r  scaled0__11/PCOUT[47]
+                         net (fo=1, routed)           0.002    27.897    scaled0__11_n_106
+    DSP48_X0Y40          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    29.335 r  scaled0__12/PCOUT[47]
+                         net (fo=1, routed)           0.002    29.337    scaled0__12_n_106
+    DSP48_X0Y41          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    30.775 r  scaled0__13/PCOUT[47]
+                         net (fo=1, routed)           0.002    30.777    scaled0__13_n_106
+    DSP48_X0Y42          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    32.215 r  scaled0__14/PCOUT[47]
+                         net (fo=1, routed)           0.002    32.217    scaled0__14_n_106
+    DSP48_X0Y43          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    33.655 r  scaled0__15/PCOUT[47]
+                         net (fo=1, routed)           0.002    33.657    scaled0__15_n_106
+    DSP48_X0Y44          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    35.095 r  scaled0__16/PCOUT[47]
+                         net (fo=1, routed)           0.002    35.097    scaled0__16_n_106
+    DSP48_X0Y45          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    36.535 r  scaled0__17/PCOUT[47]
+                         net (fo=1, routed)           0.002    36.537    scaled0__17_n_106
+    DSP48_X0Y46          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    37.975 r  scaled0__18/PCOUT[47]
+                         net (fo=1, routed)           0.002    37.977    scaled0__18_n_106
+    DSP48_X0Y47          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    39.415 r  scaled0__19/PCOUT[47]
+                         net (fo=1, routed)           0.002    39.417    scaled0__19_n_106
+    DSP48_X0Y48          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    40.855 r  scaled0__20/PCOUT[47]
+                         net (fo=1, routed)           0.002    40.857    scaled0__20_n_106
+    DSP48_X0Y49          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    42.295 r  scaled0__21/PCOUT[47]
+                         net (fo=1, routed)           0.056    42.351    scaled0__21_n_106
+    DSP48_X0Y50          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    43.789 r  scaled0__22/PCOUT[47]
+                         net (fo=1, routed)           0.002    43.791    scaled0__22_n_106
+    DSP48_X0Y51          DSP48E1 (Prop_dsp48e1_PCIN[47]_PCOUT[47])
+                                                      1.438    45.229 r  scaled0__23/PCOUT[47]
+                         net (fo=1, routed)           0.002    45.231    scaled0__23_n_106
+    DSP48_X0Y52          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[14])
+                                                      1.271    46.502 r  scaled0__24/P[14]
+                         net (fo=2, routed)           0.859    47.361    scaled0__24_n_91
+    SLICE_X11Y129        CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.418    47.779 r  data_out_reg[1]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    47.779    data_out_reg[1]_i_2_n_0
+    SLICE_X11Y130        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098    47.877 r  data_out_reg[5]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    47.877    data_out_reg[5]_i_2_n_0
+    SLICE_X11Y131        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098    47.975 r  data_out_reg[9]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    47.975    data_out_reg[9]_i_2_n_0
+    SLICE_X11Y132        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098    48.073 r  data_out_reg[13]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    48.073    data_out_reg[13]_i_2_n_0
+    SLICE_X11Y133        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098    48.171 r  data_out_reg[15]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    48.171    data_out_reg[15]_i_2_n_0
+    SLICE_X11Y134        CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.200    48.371 f  data_out_reg[15]_i_20/O[2]
+                         net (fo=4, routed)           0.810    49.181    data_out_reg[15]_i_20_n_5
+    SLICE_X9Y132         LUT2 (Prop_lut2_I0_O)        0.253    49.434 r  data_out[15]_i_37/O
+                         net (fo=1, routed)           0.000    49.434    data_out[15]_i_37_n_0
+    SLICE_X9Y132         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.332    49.766 r  data_out_reg[15]_i_21/CO[3]
+                         net (fo=1, routed)           0.000    49.766    data_out_reg[15]_i_21_n_0
+    SLICE_X9Y133         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098    49.864 r  data_out_reg[15]_i_10/CO[3]
+                         net (fo=1, routed)           0.000    49.864    data_out_reg[15]_i_10_n_0
+    SLICE_X9Y134         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.098    49.962 r  data_out_reg[15]_i_4/CO[3]
+                         net (fo=16, routed)          1.359    51.321    data_out10_in
+    SLICE_X8Y128         LUT3 (Prop_lut3_I0_O)        0.105    51.426 r  data_out[4]_i_1/O
+                         net (fo=1, routed)           0.000    51.426    p_0_in[4]
+    SLICE_X8Y128         FDCE                                         r  data_out_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       50.000    50.000 r  <hidden>
+    L22                                               0.000    50.000 r  clk
+                         net (fo=0)                   0.000    50.000    clk
+    L22                  IBUF (Prop_ibuf_I_O)         0.762    50.762 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.734    52.496    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.077    52.573 r  clk_IBUF_BUFG_inst/O
+                         net (fo=496, routed)         1.379    53.952    clk_IBUF_BUFG
+    SLICE_X8Y128         FDCE                                         r  data_out_reg[4]/C
+                         clock pessimism              0.234    54.185    <hidden>
+                         clock uncertainty           -0.035    54.150    <hidden>
+    SLICE_X8Y128         FDCE (Setup_fdce_C_D)        0.074    54.224    data_out_reg[4]
+  -------------------------------------------------------------------
+                         required time                         54.224    <hidden>
+                         arrival time                         -51.426    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  2.798    <hidden>
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.155ns  (arrival time - required time)
+  Source:                 shift_reg_reg[10][3]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            shift_reg_reg[11][3]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.219ns  (logic 0.164ns (74.792%)  route 0.055ns (25.208%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.054ns
+    Source Clock Delay      (SCD):    1.530ns
+    Clock Pessimism Removal (CPR):    0.523ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+    L22                                               0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    L22                  IBUF (Prop_ibuf_I_O)         0.190     0.190 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.690     0.880    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.906 r  clk_IBUF_BUFG_inst/O
+                         net (fo=496, routed)         0.625     1.530    clk_IBUF_BUFG
+    SLICE_X12Y110        FDCE                                         r  shift_reg_reg[10][3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X12Y110        FDCE (Prop_fdce_C_Q)         0.164     1.694 r  shift_reg_reg[10][3]/Q
+                         net (fo=1, routed)           0.055     1.750    shift_reg_reg[10][3]
+    SLICE_X12Y110        FDCE                                         r  shift_reg_reg[11][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+    L22                                               0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    L22                  IBUF (Prop_ibuf_I_O)         0.378     0.378 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.750     1.128    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.157 r  clk_IBUF_BUFG_inst/O
+                         net (fo=496, routed)         0.897     2.054    clk_IBUF_BUFG
+    SLICE_X12Y110        FDCE                                         r  shift_reg_reg[11][3]/C
+                         clock pessimism             -0.523     1.530    <hidden>
+    SLICE_X12Y110        FDCE (Hold_fdce_C_D)         0.064     1.594    shift_reg_reg[11][3]
+  -------------------------------------------------------------------
+                         required time                         -1.594    <hidden>
+                         arrival time                           1.750    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.155    <hidden>
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 25.000 }
+Period(ns):         50.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            1.592         50.000      48.408     BUFGCTRL_X0Y0  clk_IBUF_BUFG_inst/I
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         25.000      24.500     SLICE_X9Y129   data_out_reg[0]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         25.000      24.500     SLICE_X9Y129   data_out_reg[0]/C
+
+
+
