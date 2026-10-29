@@ -75,7 +75,7 @@ Note that the 31-tap FIR has a 15-sample group delay (about 0.27 s at 55 Hz). Th
 - Fmax and power values are Vivado estimates (relaxed constraint, vectorless power with Low confidence). No on-board measurement was performed and no IIR was implemented in hardware, so no area or power comparison with IIR is claimed.
 ## Citation
 
-If you use this work, please cite the archived release: **[10.5281/zenodo.23758178](https://doi.org/10.5281/zenodo.23758178)**. See `CITATION.cff`.cff
+If you use this work, please cite the archived release: **[10.5281/zenodo.23758178](https://doi.org/10.5281/zenodo.23758178)**. See `CITATION.cff`
 ## Repository structure
 
 ```text
