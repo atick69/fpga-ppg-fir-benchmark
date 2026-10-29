@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this architecture in your research, please cite this repository."
+authors:
+  - family-names: "Nabil"
+    given-names: "Atick Hassan"
+title: "Open-Source FPGA FIR Architecture Comparison for Wearable PPG"
+version: 1.0.0
+date-released: "2026-10-29"
+license: Apache-2.0
+repository-code: "https://github.com/atick69/fpga-ppg-fir-benchmark"
+keywords:
+  - FPGA
+  - PPG
+  - FIR Filter
+  - Artix-7
+  - Wearable Sensors
+  - Digital Signal Processing
+  - Symmetric Folding
